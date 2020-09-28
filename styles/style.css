@@ -27,6 +27,7 @@ main {
     margin-bottom: calc(var(--footer-height));
     min-width: 500px;
     padding: 20px;
+    background-color: lightgrey;
 }
 
 header {
@@ -53,22 +54,36 @@ content {
     width: 80%;
 }
 
+.results {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 260px;
+    background-color: lightgrey;
+}
+
 p {
     margin: 30px;
 }
 
-ul {
+ul, ol{
     padding-left: 100px;
-}
-
-ol {
-    padding-left: 100px;
+    border: solid 1px lightgray;
 }
 
 .italics {
-    font-style: italic0;
+    font-style: italic;
 }
 
 #euclid-photo {
     height: 400px;
+    padding: 5px;
 }

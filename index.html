@@ -13,33 +13,52 @@
 </head>
 
 <body>
-    <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png"/>
-        </div>
-    </header>
 
 
     <main>
 
 
 
-        <article>
+        <article class="content">
 
 
-            <h2>The Infinitude of Prime Numbers</h2>
+            <h2>Euclid</h2>
 
-            <p>
-                Eulcid was Greek mathematician that is well-known for writing the <span class="italics">Elements</span>, a collection of books that detail subjects such as geometry and number theory. Did you know that he also provided a famous proof of the fact that there are infinitely-many prime numbers?
-            </p>
+                <p>
+                    Eulcid was a Greek mathematician that is well-known for writing the <span class="italics">Elements</span>, a collection of books that detail subjects such as geometry and number theory. Did you know that he also provided a famous proof of the fact that there are infinitely-many prime numbers?
+                </p>
 
-            <p>
-                Recall that a prime number cannot be evenly divided by any positive number except 1 and the prime itself. Prime numbers are of supreme importantance because of the <span class="italics">Fundamental Theorem of Arithmetic</span>, which states that every positive integer can be written uniquely (up to order, since multiplication is commutative) as a product of prime numbers. For example, the number 105 can be written as a product of 3, 5, and 7, and the only way to write 105 as a product of prime numbers is to use exactly one 3, exactly one 5, and exactly one 7.
-            </p>
+            <h3></h3>  
 
-            <p>
-                Euclid's proof use the strategy <span class="italics">proof by contradiction</span>. It goes like this: assume the opposite of what you want to be true and demonstrate that this assumptions leads in one way or another to a logical contradiction. In his proof, we assume that there are only a finite number of primes. Then we define a carefully chosen number and use it to find a logical impossibility!
-            </p>
+                <p>
+                    Recall that a prime number cannot be evenly divided by any positive number except 1 and the prime itself. Prime numbers are of supreme importantance because of the <span class="italics">Fundamental Theorem of Arithmetic</span>, which states that every positive integer can be written uniquely (up to order, since multiplication is commutative) as a product of prime numbers. For example, the number 105 can be written as a product of 3, 5, and 7, and the only way to write 105 as a product of prime numbers is to use exactly one 3, exactly one 5, and exactly one 7.
+                </p>
+
+                <p>
+                    Euclid's proof uses the strategy <span class="italics">proof by contradiction</span>. It goes like this:
+                    
+                        <ol>
+
+                            <li>Assume the opposite of what you want to be true.</li>
+                            <li>Bring into existence some object like a number or algebraic expression.</li>
+                            <li>Use this object to arrive at logical impossibility, like 1 equals 2.</li>
+
+                        </ol>
+                </p>
+                    
+                <p>
+                    In his proof, we assume that there are only a finite number of primes. Then we define a carefully chosen number and use it to find a logical impossibility! Proof by contradiction is an extremely useful strategy. We can use it to prove lots of things including the following facts:
+
+                    <ul>
+
+                        <li>The square root of 2 is irrational.</li>
+                        <li>The square root of any non-square number is irrational.</li>
+                        <li>The shortest path between two points is a straight line.</li>
+
+                    </ul>
+
+                    
+                </p>
 
 
         </article>
@@ -47,7 +66,7 @@
 
 
 
-        <article class="results"></article>
+        <article id="results" class="results">Your quiz results will display here.</article>
 
 
 
@@ -57,6 +76,8 @@
 
 
     </main>
+
+    <img id="euclid-photo" src="./assets/euclid-statue.jpg" alt="Statue of Euclid in the Oxford University Museum of Natural History"/>
 
 
     <script type="module" src="app.js"></script>

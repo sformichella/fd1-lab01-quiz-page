@@ -6,8 +6,9 @@ import{
 
 
 
-let results = document.getElementById('results');
+let resultsText = document.getElementById('results');
 let evaluationText =  document.getElementById('eval-text');
+let resultsSection = document.getElementById('results-section')
 
 export function beginQuizClickHandler() {
 
@@ -52,9 +53,24 @@ export function beginQuizClickHandler() {
 
     percentage = Math.floor(100 * correctAnswers/3);
 
-    results.textContent = `${userName} got ${correctAnswers} answers correct out of 3. That's ${percentage}%`;
+    resultsText.textContent = `${userName} got ${correctAnswers} answers correct out of 3. That's ${percentage}%`;
 
     evaluationText.textContent = evaluationMessage(percentage);
+
+
+
+    if (percentage > 90) {
+        resultsSection.style.backgroundColor = 'green';
+    }
+
+    else if (percentage > 50) {
+        resultsSection.style.backgroundColor = 'yellow';
+    }
+    else {
+        resultsSection.style.backgroundColor = 'darksalmon';
+    }
+
+
 
     correctAnswers = 0;
 }

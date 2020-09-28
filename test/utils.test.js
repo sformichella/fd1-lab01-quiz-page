@@ -13,7 +13,7 @@ test('yesCoerce should return true when called with yes', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = yesCoerce(yes);
+    const actual = yesCoerce('yes');
 
     //Expect
     // Make assertions about what is expected versus the actual result
@@ -30,7 +30,7 @@ test('yesCoerce should return false when called with no', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = yesCoerce(no);
+    const actual = yesCoerce('no');
 
     //Expect
     // Make assertions about what is expected versus the actual result
@@ -42,12 +42,12 @@ test('yesCoerce should return false when called with no', (expect) => {
 
 // Testing evaluationMessage
 
-test('Should return "Great Work!!!" when fed 95', (expect) => {
+test('Should return "Great work!!!" when called with 95', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = 'Great Work!!!';
+    const expected = 'Great work!!!';
     
-    //Act 
+    //Act
     // Call the function you're testing and set the result to a const
     const actual = evaluationMessage(95);
 

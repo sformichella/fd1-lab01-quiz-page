@@ -5,7 +5,6 @@ import{
 
 
 
-
 let resultsText = document.getElementById('results');
 let evaluationText =  document.getElementById('eval-text');
 let resultsSection = document.getElementById('results-section')
@@ -58,18 +57,15 @@ export function beginQuizClickHandler() {
     evaluationText.textContent = evaluationMessage(percentage);
 
 
-
     if (percentage > 90) {
         resultsSection.style.backgroundColor = 'green';
     }
-
     else if (percentage > 50) {
         resultsSection.style.backgroundColor = 'yellow';
     }
     else {
         resultsSection.style.backgroundColor = 'darksalmon';
     }
-
 
 
     correctAnswers = 0;

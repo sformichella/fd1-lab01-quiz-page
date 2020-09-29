@@ -8,24 +8,10 @@ html, body {
 }
 
 body {
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    padding-bottom: 300px;
-
-    --color1: #ffffff;
-    --color2: #ffffff;
-    --color3: #ffffff;
-    --color4: #ffffff;
-    --color5: #ffffff;
-
-    --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
-    --footer-height: 25px;
-    
     font-family: 'Titillium Web', sans-serif;
     background-color: lightgrey;
 }
@@ -34,39 +20,20 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
     min-width: 500px;
+    height: 100%;
     padding: 20px;
     background-color: lightgrey;
 }
 
-header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
-}
-
-footer {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
-}
-
-h2 {
+.euclid-title {
     font-size: 1.8em;
     font-weight: bold;
 }
 
-h3 {
+.quiz-header {
     font-size: 1.3em;
     font-weight: bold;
-}
-
-content {
-    width: 80%;
 }
 
 .results {
@@ -89,6 +56,11 @@ content {
     background-color: lightgrey;
 }
 
+.img-section img {
+    width: 250px;
+    padding: 5px;
+}
+
 p {
     margin: 30px;
 }
@@ -102,7 +74,6 @@ ul, ol {
     font-style: italic;
 }
 
-#euclid-photo {
-    height: 400px;
-    padding: 5px;
+#quiz-button {
+    margin-bottom: 100px;
 }
